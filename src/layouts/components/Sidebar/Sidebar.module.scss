@@ -1,0 +1,8 @@
+.wrapper {
+    width: 200px;
+    min-height: calc(100vh - var(--default-layout-header-height));
+}
+
+.inner {
+    height: 100%;
+}
