@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +9,7 @@ import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
-export default function AccountItem({ data }) {
+function AccountItem({ data }) {
     return (
         <Link to={`/@${data.nickname}`} className={cx('wrapper')}>
             <Image
@@ -32,7 +33,7 @@ export default function AccountItem({ data }) {
     );
 }
 
-export function UserAccountItem({ data }) {
+function UserAccountItem({ data }) {
     return (
         <div className={cx('wrapper-user-account')}>
             <a className={cx('link-user-account')} href={data.avatar}>
@@ -57,3 +58,14 @@ export function UserAccountItem({ data }) {
         </div>
     );
 }
+
+AccountItem.propTypes = {
+    data: PropTypes.object.isRequired,
+};
+
+UserAccountItem.propTypes = {
+    data: PropTypes.object.isRequired,
+};
+
+export { AccountItem, UserAccountItem };
+export default AccountItem;
