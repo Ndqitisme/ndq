@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Tippy from '@tippyjs/react/';
-import 'tippy.js/dist/tippy.css';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import 'tippy.js/dist/tippy.css';
 
 import Search from './Search';
 import { MENU_ITEMS, ACTION_ITEMS, USER_MENU_ITEMS } from './ITEMS';
@@ -18,8 +18,6 @@ import Image from '~/components/Image';
 const cx = classNames.bind(styles);
 
 function Header() {
-    console.log('Re-render Header');
-
     //Handle Logic
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
@@ -116,9 +114,9 @@ function Header() {
                                 alt="Avatar User"
                             />
                         ) : (
-                            <Button className={cx('more-btn')}>
+                            <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faBars} />
-                            </Button>
+                            </button>
                         )}
                     </PopperMenu>
                 </div>

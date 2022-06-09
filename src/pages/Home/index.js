@@ -70,6 +70,7 @@ function Home() {
                     <div key={item.id} className={cx('card')}>
                         <h2>{item.title}</h2>
                         <p>{item.body}</p>
+                        <br />
                     </div>
                 );
             })}
