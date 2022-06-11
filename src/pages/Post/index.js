@@ -1,9 +1,1 @@
-function Post() {
-    return (
-        <div>
-            <h1>Post Page</h1>
-        </div>
-    );
-}
-
-export default Post;
+export { default } from './Post';

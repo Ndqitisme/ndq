@@ -72,7 +72,8 @@ input,
     border: none;
 }
 
-a[href],
+a,
 svg {
+    color: var(--text-color);
     text-decoration: none;
 }

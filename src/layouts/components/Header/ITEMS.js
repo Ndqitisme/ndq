@@ -4,18 +4,18 @@ import {
     faKeyboard,
     faLightbulb,
     faAddressCard,
-    faBell,
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
-    LanguageIcon,
-    BrightnessIcon,
-    ChatDotsIcon,
     PencilSquare,
-    GearIcon,
     CastIcon,
-    HalfIcon,
-    MoonStarIcon,
+    ChatSquareDotsIcon,
+    BellIcon,
+    LanguageIcon,
+    HalfSquareIcon,
+    BrightnessHighIcon,
+    MoonStarsIcon,
+    GearIcon,
 } from '~/components/Icons';
 
 export const ACTION_ITEMS = [
@@ -23,25 +23,23 @@ export const ACTION_ITEMS = [
         content: 'Đăng Bài Viết',
         icon: <PencilSquare height="22px" width="22px" />,
         to: '/post',
-        class: 'action-btn-1',
+        class: 'action-btn',
     },
     {
         content: 'Phát Trực Tiếp',
         icon: <CastIcon height="22px" width="22px" />,
         to: '/livestreaming',
-        class: 'action-btn-2',
+        class: 'action-btn',
     },
     {
         content: 'Tin Nhắn',
-        icon: <ChatDotsIcon height="22px" width="22px" />,
-        to: '/message',
-        class: 'action-btn-3',
+        icon: <ChatSquareDotsIcon height="22px" width="22px" />,
+        class: 'action-btn',
     },
     {
         content: 'Thông Báo',
-        icon: <FontAwesomeIcon icon={faBell} />,
-        to: '/notification',
-        class: 'action-btn-4',
+        icon: <BellIcon height="22px" width="22px" />,
+        class: 'action-btn',
     },
 ];
 
@@ -78,7 +76,7 @@ export const MENU_ITEMS = [
     },
     {
         type: 'dark-light-mode',
-        icon: <HalfIcon height="18px" width="18px" />,
+        icon: <HalfSquareIcon height="18px" width="18px" />,
         title: 'Giao Diện Sáng - Tối',
         children: {
             title: 'Giao Diện Sáng - Tối',
@@ -87,8 +85,8 @@ export const MENU_ITEMS = [
                     type: 'light-mode',
                     title: 'Giao Diện Sáng',
                     icon: (
-                        <BrightnessIcon
-                            className="spinnerHover"
+                        <BrightnessHighIcon
+                            className={['hover-spinner']}
                             height="22px"
                             width="22px"
                         />
@@ -98,8 +96,8 @@ export const MENU_ITEMS = [
                     type: 'dark-mode',
                     title: 'Giao Diện Tối',
                     icon: (
-                        <MoonStarIcon
-                            className="ziczacMoonHover"
+                        <MoonStarsIcon
+                            className={['hover-waver-reverse']}
                             height="18px"
                             width="18px"
                         />
@@ -130,7 +128,13 @@ export const USER_MENU_ITEMS = [
     },
     {
         type: 'setting',
-        icon: <GearIcon className="spinnerHover" height="20px" width="20px" />,
+        icon: (
+            <GearIcon
+                className={['hover-spinner']}
+                height="20px"
+                width="20px"
+            />
+        ),
         title: 'Cài Đặt',
         to: '/setting',
     },

@@ -3,11 +3,11 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 
-import styles from './Header.module.scss';
+import styles from './HeaderChildrenPopper.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Header({ title, onBack }) {
+function HeaderChildrenPopper({ title, onBack }) {
     return (
         <header className={cx('header')}>
             <button className={cx('back-btn')} onClick={onBack}>
@@ -18,9 +18,9 @@ function Header({ title, onBack }) {
     );
 }
 
-Header.propTypes = {
+HeaderChildrenPopper.propTypes = {
     title: PropTypes.string.isRequired,
     onBack: PropTypes.func.isRequired,
 };
 
-export default Header;
+export default HeaderChildrenPopper;

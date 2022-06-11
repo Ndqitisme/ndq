@@ -66,10 +66,7 @@
     align-items: center;
 }
 
-.action-btn-1,
-.action-btn-2,
-.action-btn-3,
-.action-btn-4 {
+.action-btn {
     display: flex;
     color: #161823;
     background-color: transparent;
@@ -77,18 +74,9 @@
     padding: 4px 16px;
     cursor: pointer;
 
-    &:hover {
+    &:hover svg {
         color: var(--primary-color-dark);
     }
-}
-
-.action-btn-2 {
-    font-size: 2.2rem;
-}
-.action-btn-4 {
-    font-size: 2.2rem;
-
-    animation: ziczac 1s linear infinite;
 }
 
 .avatar-user {
@@ -110,22 +98,4 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-}
-
-@keyframes ziczac {
-    0% {
-        transform: rotate(0);
-    }
-    25% {
-        transform: rotate(20deg);
-    }
-    50% {
-        transform: rotate(0);
-    }
-    75% {
-        transform: rotate(-20deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
 }

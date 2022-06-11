@@ -24,16 +24,6 @@
         pointer-events: none;
         opacity: 0.5;
     }
-
-    //spinner
-    &:hover svg[class*='spinnerHover'] {
-        animation: spinner 2s linear infinite;
-    }
-
-    //ziczacMoon
-    &:hover svg[class*='ziczacMoonHover'] {
-        animation: ziczacMoon 3s linear infinite;
-    }
 }
 
 .icon + .title,
@@ -101,29 +91,4 @@
 .large {
     min-width: 140px;
     padding: 12px 24px;
-}
-
-//Animation
-@keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes ziczacMoon {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(-100deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
 }
