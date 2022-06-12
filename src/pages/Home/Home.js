@@ -3,11 +3,14 @@ import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 
 import styles from './Home.module.scss';
+import { actions, useGlobalState } from '~/components/GlobalState';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
 function Home() {
     const [fakeApi, setFakeApi] = useState([]);
+    const [globalState, dispatch] = useGlobalState();
 
     // Fake API
 
@@ -30,6 +33,17 @@ function Home() {
             <h4>Email: Ndqitisme@gmail.com</h4>
             <h4>Ngôn Ngữ Lập Trình: JavaScript</h4>
             <h4>Thư Viện Xây Dựng: React JS</h4>
+            <br />
+            <h2>ID Page Number: {globalState.idPage}</h2>
+            <Button
+                rounded
+                onClick={() => {
+                    dispatch(actions.changeIdPage(globalState.idPage + 1));
+                }}
+            >
+                Increase Id Page
+            </Button>
+            <br />
             <br />
             <br />
             <h4>Declarative</h4>
