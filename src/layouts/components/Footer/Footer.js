@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import classNames from 'classnames/bind';
 
 import { TiktokIcon, YoutubeIcon, FacebookIcon } from '~/components/Icons';
@@ -46,4 +45,4 @@ function Footer() {
     );
 }
 
-export default memo(Footer);
+export default Footer;

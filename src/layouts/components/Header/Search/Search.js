@@ -10,7 +10,7 @@ import classNames from 'classnames/bind';
 
 import styles from './Search.module.scss';
 import { PopperWrapper } from '~/components/Popper';
-import AccountItem from '~/components/AccountItem';
+import SearchResult from './SearchResult';
 import { useDebounce } from '~/hooks';
 import * as searchService from '~/services/searchService';
 
@@ -19,29 +19,29 @@ const cx = classNames.bind(styles);
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
-    const [showSearchResult, setSearchShowResult] = useState(true);
+    const [showSearchResult, setSearchShowResult] = useState(false);
     const [searchLoading, setSearchLoading] = useState(false);
 
-    const debounced = useDebounce(searchValue, 600);
+    const debouncedValue = useDebounce(searchValue, 600);
 
     const inputRef = useRef();
 
     useEffect(() => {
-        if (!debounced.trim()) {
+        if (!debouncedValue.trim()) {
             return setSearchResult([]);
         }
 
         const fetchApi = async () => {
             setSearchLoading(true);
 
-            const result = await searchService.search(debounced);
+            const result = await searchService.search(debouncedValue);
             setSearchResult(result);
 
             setSearchLoading(false);
         };
 
         fetchApi();
-    }, [debounced]);
+    }, [debouncedValue]);
 
     const handleChangeInput = (e) => {
         const searchValue = e.target.value;
@@ -76,9 +76,7 @@ function Search() {
                             <h5 className={cx('result-title')}>
                                 Kết Quả Tìm Kiếm: {searchValue}
                             </h5>
-                            {searchResult.map((result) => (
-                                <AccountItem key={result.id} data={result} />
-                            ))}
+                            {<SearchResult data={searchResult} />}
                         </PopperWrapper>
                     </div>
                 )}

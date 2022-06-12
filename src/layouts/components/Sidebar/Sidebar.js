@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import classNames from 'classnames/bind';
 
 import styles from './Sidebar.module.scss';
@@ -15,4 +14,4 @@ function Sidebar() {
     );
 }
 
-export default memo(Sidebar);
+export default Sidebar;

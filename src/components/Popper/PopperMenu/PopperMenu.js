@@ -45,15 +45,17 @@ function PopperMenu({
         });
     };
 
+    const handleBackMenu = () => {
+        setHistory((prev) => prev.slice(0, -1));
+    };
+
     const renderCoreMenu = (attrs) => (
         <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
             <PopperWrapper className={cx('wrapper-menu')}>
                 {history.length > 1 ? (
                     <HeaderChildrenPopper
                         title={current.title}
-                        onBack={() => {
-                            setHistory((prev) => prev.slice(0, -1));
-                        }}
+                        onBack={handleBackMenu}
                     />
                 ) : (
                     popperHeader()
@@ -63,7 +65,8 @@ function PopperMenu({
         </div>
     );
 
-    const handleHide = () => {
+    //Hide will reset to first menu
+    const handleResetMenu = () => {
         setHistory((prev) => prev.slice(0, 1));
     };
 
@@ -75,7 +78,7 @@ function PopperMenu({
             delay={[0, 600]}
             placement="bottom-end"
             render={renderCoreMenu}
-            onHide={handleHide}
+            onHide={handleResetMenu}
         >
             {children}
         </Tippy>
