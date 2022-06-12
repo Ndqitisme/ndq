@@ -79,6 +79,28 @@
     }
 }
 
+.action-btn-bell {
+    animation: bell-waver 1.2s infinite linear;
+
+    @keyframes bell-waver {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(20deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-20deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
 .avatar-user {
     width: 34px;
     height: 34px;

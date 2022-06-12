@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react/';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import 'tippy.js/dist/tippy.css';
 
-import Search from './Search/Search';
+import Search from './Search';
 import { MENU_ITEMS, ACTION_ITEMS, USER_MENU_ITEMS } from './ITEMS';
 import config from '~/config';
 import styles from './Header.module.scss';

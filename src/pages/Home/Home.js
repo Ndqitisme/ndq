@@ -1,6 +1,4 @@
-import axios from 'axios';
 import classNames from 'classnames/bind';
-import { useEffect, useState } from 'react';
 
 import styles from './Home.module.scss';
 import { actions, useGlobalState } from '~/components/GlobalState';
@@ -9,16 +7,7 @@ import Button from '~/components/Button';
 const cx = classNames.bind(styles);
 
 function Home() {
-    const [fakeApi, setFakeApi] = useState([]);
     const [globalState, dispatch] = useGlobalState();
-
-    // Fake API
-
-    useEffect(() => {
-        axios('https://jsonplaceholder.typicode.com/posts').then((res) =>
-            setFakeApi(res.data)
-        );
-    }, []);
 
     // Fake API
 
@@ -79,15 +68,7 @@ function Home() {
                 dụng React Native.
             </p>
             <br />
-            {fakeApi.map((item) => {
-                return (
-                    <div key={item.id} className={cx('card')}>
-                        <h2>{item.title}</h2>
-                        <p>{item.body}</p>
-                        <br />
-                    </div>
-                );
-            })}
+            <br />
         </div>
     );
 }

@@ -12,7 +12,7 @@ function reducer(state, action) {
                 idPage: action.payload,
             };
         default:
-            return state;
+            throw new Error('Không tồn tại hành động này');
     }
 }
 

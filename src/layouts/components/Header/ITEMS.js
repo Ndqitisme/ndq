@@ -39,7 +39,10 @@ export const ACTION_ITEMS = [
     {
         content: 'Thông Báo',
         icon: <BellIcon height="22px" width="22px" />,
-        class: 'action-btn',
+        class: {
+            'action-btn': true,
+            'action-btn-bell': true,
+        },
     },
 ];
 
@@ -84,24 +87,14 @@ export const MENU_ITEMS = [
                 {
                     type: 'light-mode',
                     title: 'Giao Diện Sáng',
-                    icon: (
-                        <BrightnessHighIcon
-                            className={['hover-spinner']}
-                            height="22px"
-                            width="22px"
-                        />
-                    ),
+                    icon: <BrightnessHighIcon height="22px" width="22px" />,
+                    class: 'spinHover',
                 },
                 {
                     type: 'dark-mode',
                     title: 'Giao Diện Tối',
-                    icon: (
-                        <MoonStarsIcon
-                            className={['hover-waver-reverse']}
-                            height="18px"
-                            width="18px"
-                        />
-                    ),
+                    icon: <MoonStarsIcon height="18px" width="18px" />,
+                    class: 'waverReverseHover',
                 },
             ],
         },
@@ -128,20 +121,15 @@ export const USER_MENU_ITEMS = [
     },
     {
         type: 'setting',
-        icon: (
-            <GearIcon
-                className={['hover-spinner']}
-                height="20px"
-                width="20px"
-            />
-        ),
+        icon: <GearIcon height="20px" width="20px" />,
         title: 'Cài Đặt',
         to: '/setting',
+        class: 'spinHover',
     },
     {
         type: 'logout',
         icon: <FontAwesomeIcon icon={faArrowRightFromBracket} />,
         title: 'Đăng Xuất',
-        separate: true,
+        class: 'separate',
     },
 ];

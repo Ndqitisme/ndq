@@ -7,9 +7,7 @@ import styles from './PopperMenu.module.scss';
 const cx = classNames.bind(styles);
 
 function PopperMenuItem({ data, onClick }) {
-    const classes = cx('menu-item', {
-        separate: data.separate,
-    });
+    const classes = cx('menu-item', data.class);
 
     return (
         <Button
