@@ -2,6 +2,9 @@ import { CHANGE_ID_PAGE } from './constants';
 
 const initState = {
     idPage: 1,
+
+    userActive: false,
+    userData: {},
 };
 
 function reducer(state, action) {

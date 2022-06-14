@@ -30,6 +30,10 @@
     padding: 10px 16px;
     line-height: 1.8rem;
 
+    &.noIcon {
+        padding-left: 32px;
+    }
+
     &.separate {
         padding-top: 14px;
         border-top: 1px solid rgba(22, 24, 35, 0.12);
