@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 
 import Header from '~/layouts/components/Header';
-import styles from './HeaderOnly.module.scss';
+import styles from './ExtraLayout.module.scss';
 
 const cx = classNames.bind(styles);
 
-function HeaderOnly({ children }) {
+function ExtraLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
@@ -17,8 +17,8 @@ function HeaderOnly({ children }) {
     );
 }
 
-HeaderOnly.propTypes = {
+ExtraLayout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default HeaderOnly;
+export default ExtraLayout;

@@ -6,7 +6,7 @@ import Profile from '~/pages/Profile';
 import Search from '~/pages/Search';
 import Post from '~/pages/Post';
 //Import layouts
-import { HeaderOnly } from '~/layouts';
+import { ExtraLayout } from '~/layouts';
 
 //Router Không Cần Đăng Nhập Vẫn Xem Được
 const publicRoutes = [
@@ -14,16 +14,18 @@ const publicRoutes = [
     //component: Thành phần được render
     //layout: Bố cục được sử dụng
 
-    //Home Page
+    //Main Page
     { path: config.routes.home, component: Home },
     { path: config.routes.search, component: Search },
-    { path: config.routes.post, component: Post },
     { path: config.routes.profile, component: Profile },
+
+    //Action User
+    { path: config.routes.post, component: Post },
 
     //Routes Other
 
     //404
-    { path: config.routes.error, component: ErrorPage404, layout: HeaderOnly },
+    { path: config.routes.error, component: ErrorPage404, layout: ExtraLayout },
 ];
 
 //Router Cần Đăng Nhập Vào Mới Xem Được

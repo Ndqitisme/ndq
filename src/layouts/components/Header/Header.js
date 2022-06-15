@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Tippy from '@tippyjs/react/';
@@ -61,7 +61,7 @@ function Header() {
                             className={cx('logo')}
                             src={images.logo}
                             alt="NDQ Logo"
-                        ></Image>
+                        />
                     </Link>
                     <h3 className={cx('title')}>Build and Design by NDQ</h3>
                 </div>
@@ -81,13 +81,16 @@ function Header() {
                                             placement="bottom"
                                             content={item.content}
                                         >
-                                            <Link to={item.to}>
-                                                <button
-                                                    className={cx(item.class)}
-                                                >
-                                                    {item.icon}
-                                                </button>
-                                            </Link>
+                                            <NavLink
+                                                to={item.to}
+                                                className={({ isActive }) =>
+                                                    cx(item.class, {
+                                                        active: isActive,
+                                                    })
+                                                }
+                                            >
+                                                {item.icon}
+                                            </NavLink>
                                         </Tippy>
                                     );
                                 } else {

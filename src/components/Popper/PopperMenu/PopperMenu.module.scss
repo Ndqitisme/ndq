@@ -29,6 +29,7 @@
     border-radius: 0;
     padding: 10px 16px;
     line-height: 1.8rem;
+    transition: all 0.1s ease-in-out;
 
     &.noIcon {
         padding-left: 32px;
@@ -48,7 +49,7 @@
     }
 
     &.spinHover:hover svg {
-        animation: spin 1.2s linear infinite;
+        animation: spin 2.4s linear infinite;
     }
 
     &.waverReverseHover:hover svg {

@@ -74,7 +74,15 @@
     padding: 4px 16px;
     cursor: pointer;
 
+    svg {
+        transition: all 0.2s ease;
+    }
+
     &:hover svg {
+        color: var(--primary-color);
+    }
+
+    &.active svg {
         color: var(--primary-color-dark);
     }
 }

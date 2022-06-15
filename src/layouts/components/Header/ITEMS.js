@@ -34,6 +34,7 @@ export const ACTION_ITEMS = [
     {
         content: 'Tin Nhắn',
         icon: <ChatSquareDotsIcon height="22px" width="22px" />,
+        to: '/messages',
         class: 'action-btn',
     },
     {

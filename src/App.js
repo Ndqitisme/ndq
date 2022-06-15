@@ -36,7 +36,7 @@ function App() {
                     {/* Config routes for privatePage, an account is required to access 
                 Cấu hình routes cho trang cá nhân, cần có tài khoản mới có thể truy cập*/}
                     {privateRoutes.map((route, index) => (
-                        <></>
+                        <Fragment></Fragment>
                     ))}
                 </Routes>
             </div>
