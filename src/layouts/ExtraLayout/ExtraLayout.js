@@ -17,8 +17,16 @@ function ExtraLayout({ children }) {
     );
 }
 
+<<<<<<< HEAD:src/layouts/ExtraLayout/ExtraLayout.js
 ExtraLayout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
 export default ExtraLayout;
+=======
+HeaderOnly.propTypes = {
+    children: PropTypes.node.isRequired,
+};
+
+export default HeaderOnly;
+>>>>>>> 042438b148da7b8ab72209bb1e4d04271b2706cb:src/layouts/HeaderOnly/index.js

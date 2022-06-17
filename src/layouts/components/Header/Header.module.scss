@@ -78,11 +78,11 @@
         transition: all 0.2s ease;
     }
 
-    &:hover svg {
+    &:hover {
         color: var(--primary-color);
     }
 
-    &.active svg {
+    &.active {
         color: var(--primary-color-dark);
     }
 }

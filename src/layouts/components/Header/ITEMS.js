@@ -17,24 +17,25 @@ import {
     MoonStarsIcon,
     GearIcon,
 } from '~/components/Icons';
+import config from '~/config';
 
 export const ACTION_ITEMS = [
     {
         content: 'Đăng Bài Viết',
         icon: <PencilSquare height="22px" width="22px" />,
-        to: '/post',
+        to: config.routes.post,
         class: 'action-btn',
     },
     {
         content: 'Phát Trực Tiếp',
         icon: <CastIcon height="22px" width="22px" />,
-        to: '/livestreaming',
+        to: config.routes.setUpLiveStream,
         class: 'action-btn',
     },
     {
         content: 'Tin Nhắn',
         icon: <ChatSquareDotsIcon height="22px" width="22px" />,
-        to: '/messages',
+        to: config.routes.messages,
         class: 'action-btn',
     },
     {
@@ -116,7 +117,7 @@ export const USER_MENU_ITEMS = [
         type: 'profile',
         icon: <FontAwesomeIcon icon={faAddressCard} />,
         title: 'Trang Cá Nhân',
-        to: '/@nguyenthihongvan',
+        to: config.routes.profile,
     },
     ...MENU_ITEMS,
     {
@@ -128,7 +129,7 @@ export const USER_MENU_ITEMS = [
         type: 'setting',
         icon: <GearIcon height="20px" width="20px" />,
         title: 'Cài Đặt',
-        to: '/setting',
+        to: config.routes.setting,
         class: 'spinHover',
     },
     {

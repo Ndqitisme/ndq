@@ -54,15 +54,78 @@ export const YoutubeIcon = ({
     </svg>
 );
 
-export const GGIcon = ({ width = '1.6rem', height = '1.6rem', className }) => (
+// Icon Bootstrap
+export const PencilSquare = ({
+    width = '1.6rem',
+    height = '1.6rem',
+    className,
+}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={cx('language-icon', className)}
+        className={cx('default-icon', className)}
         width={width}
         height={height}
-        viewBox="0 0 512 512"
+        fill="currentColor"
+        viewBox="0 0 16 16"
     >
-        <path d="M179.2 230.4l102.4 102.4-102.4 102.4L0 256 179.2 76.8l44.8 44.8-25.6 25.6-19.2-19.2-128 128 128 128 51.5-51.5-77.1-76.5 25.6-25.6zM332.8 76.8L230.4 179.2l102.4 102.4 25.6-25.6-77.1-76.5 51.5-51.5 128 128-128 128-19.2-19.2-25.6 25.6 44.8 44.8L512 256 332.8 76.8z" />
+        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+        <path
+            fillRule="evenodd"
+            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+        />
+    </svg>
+);
+
+export const CastIcon = ({
+    width = '1.6rem',
+    height = '1.6rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z" />
+        <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z" />
+    </svg>
+);
+
+export const ChatSquareDotsIcon = ({
+    width = '1.6rem',
+    height = '1.6rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+    </svg>
+);
+
+export const BellIcon = ({
+    width = '1.6rem',
+    height = '1.6rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
     </svg>
 );
 
@@ -84,7 +147,23 @@ export const LanguageIcon = ({
     </svg>
 );
 
-// Icon Bootstrap
+export const HalfSquareIcon = ({
+    width = '1.6rem',
+    height = '1.6rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path d="M8 15V1h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8zm6 1a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12z" />
+    </svg>
+);
+
 export const BrightnessHighIcon = ({
     width = '1.6rem',
     height = '1.6rem',
@@ -120,80 +199,6 @@ export const MoonStarsIcon = ({
     </svg>
 );
 
-export const HalfSquareIcon = ({
-    width = '1.6rem',
-    height = '1.6rem',
-    className,
-}) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={cx('default-icon', className)}
-        width={width}
-        height={height}
-        fill="currentColor"
-        viewBox="0 0 16 16"
-    >
-        <path d="M8 15V1h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8zm6 1a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12z" />
-    </svg>
-);
-
-export const PencilSquare = ({
-    width = '1.6rem',
-    height = '1.6rem',
-    className,
-}) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={cx('default-icon', className)}
-        width={width}
-        height={height}
-        fill="currentColor"
-        viewBox="0 0 16 16"
-    >
-        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-        <path
-            fillRule="evenodd"
-            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
-        />
-    </svg>
-);
-
-export const ChatSquareDotsIcon = ({
-    width = '1.6rem',
-    height = '1.6rem',
-    className,
-}) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={cx('default-icon', className)}
-        width={width}
-        height={height}
-        fill="currentColor"
-        viewBox="0 0 16 16"
-    >
-        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-    </svg>
-);
-
-export const CastIcon = ({
-    width = '1.6rem',
-    height = '1.6rem',
-    className,
-}) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={cx('default-icon', className)}
-        width={width}
-        height={height}
-        fill="currentColor"
-        viewBox="0 0 16 16"
-    >
-        <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z" />
-        <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z" />
-    </svg>
-);
-
 export const GearIcon = ({
     width = '1.6rem',
     height = '1.6rem',
@@ -212,9 +217,9 @@ export const GearIcon = ({
     </svg>
 );
 
-export const BellIcon = ({
-    width = '1.6rem',
-    height = '1.6rem',
+export const HomeIcon = ({
+    width = '2.8rem',
+    height = '2.8rem',
     className,
 }) => (
     <svg
@@ -225,6 +230,99 @@ export const BellIcon = ({
         fill="currentColor"
         viewBox="0 0 16 16"
     >
-        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+        <path
+            fillRule="evenodd"
+            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+        />
+        <path
+            fillRule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+        />
+
+        {/* 
+        <path
+            fillRule="evenodd"
+            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+        />
+        <path
+            fillRule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+        /> */}
     </svg>
 );
+
+export const CineCameraIcon = ({
+    width = '2.8rem',
+    height = '2.8rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path
+            fillRule="evenodd"
+            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"
+        />
+
+        {/* 
+        <path fillRule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+        */}
+    </svg>
+);
+
+export const PeopleIcon = ({
+    width = '2.8rem',
+    height = '2.8rem',
+    className,
+}) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 16 16"
+    >
+        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+
+        {/* 
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <path fillRule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+        */}
+    </svg>
+);
+
+export const GZIcon = ({ width = '2.8rem', height = '2.8rem', className }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx('default-icon', className)}
+        width={width}
+        height={height}
+        fill="currentColor"
+        viewBox="0 0 512 512"
+    >
+        <path d="M179.2 230.4l102.4 102.4-102.4 102.4L0 256 179.2 76.8l44.8 44.8-25.6 25.6-19.2-19.2-128 128 128 128 51.5-51.5-77.1-76.5 25.6-25.6zM332.8 76.8L230.4 179.2l102.4 102.4 25.6-25.6-77.1-76.5 51.5-51.5 128 128-128 128-19.2-19.2-25.6 25.6 44.8 44.8L512 256 332.8 76.8z" />
+        {/* 
+        <path d="M257 8C120 8 9 119 9 256s111 248 248 248 248-111 248-248S394 8 257 8zm-49.5 374.8L81.8 257.1l125.7-125.7 35.2 35.4-24.2 24.2-11.1-11.1-77.2 77.2 77.2 77.2 26.6-26.6-53.1-52.9 24.4-24.4 77.2 77.2-75 75.2zm99-2.2l-35.2-35.2 24.1-24.4 11.1 11.1 77.2-77.2-77.2-77.2-26.5 26.5 53.1 52.9-24.4 24.4-77.2-77.2 75-75L432.2 255 306.5 380.6z"/>
+        */}
+    </svg>
+);
+
+// export const Null = ({ width = '2.4rem', height = '2.4rem', className }) => (
+//     <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         className={cx('default-icon', className)}
+//         width={width}
+//         height={height}
+//         fill="currentColor"
+//         viewBox="0 0 16 16"
+//     >
+//        <path></path>
+//     </svg>
+// );

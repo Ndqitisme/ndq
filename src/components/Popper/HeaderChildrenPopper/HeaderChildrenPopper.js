@@ -18,9 +18,17 @@ function HeaderChildrenPopper({ title, onBack }) {
     );
 }
 
+<<<<<<< HEAD:src/components/Popper/HeaderChildrenPopper/HeaderChildrenPopper.js
 HeaderChildrenPopper.propTypes = {
+=======
+Header.propTypes = {
+>>>>>>> 042438b148da7b8ab72209bb1e4d04271b2706cb:src/components/Popper/Header/index.js
     title: PropTypes.string.isRequired,
     onBack: PropTypes.func.isRequired,
 };
 
+<<<<<<< HEAD:src/components/Popper/HeaderChildrenPopper/HeaderChildrenPopper.js
 export default HeaderChildrenPopper;
+=======
+export default Header;
+>>>>>>> 042438b148da7b8ab72209bb1e4d04271b2706cb:src/components/Popper/Header/index.js

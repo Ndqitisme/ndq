@@ -1,0 +1,33 @@
+.item-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    padding: 8px 8px 8px 0;
+    border-radius: 6px;
+
+    transition: all 0.2s ease-in-out;
+
+    &.active {
+        color: var(--primary-color-dark);
+        background-color: rgba(83, 236, 236, 0.075) !important;
+    }
+
+    &:hover {
+        background-color: rgba(83, 236, 236, 0.03);
+    }
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+}
+
+.item-title {
+    display: flex;
+    padding-left: 8px;
+    line-height: 2.8rem;
+}
