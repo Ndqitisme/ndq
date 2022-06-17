@@ -14,6 +14,7 @@
 
     //Default Layout
     --default-layout-header-height: 66px;
+    --defautl-layout-footer-height: 32px;
     --default-layout-width: 100%;
     --defautl-layout-horizontal-spacer: 0 28px 0 24px;
 }
@@ -72,8 +73,7 @@ input,
     border: none;
 }
 
-a,
-svg {
+a {
     color: var(--text-color);
     text-decoration: none;
 }
