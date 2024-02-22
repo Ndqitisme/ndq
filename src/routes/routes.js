@@ -6,7 +6,7 @@ import Profile from '~/pages/Profile';
 import Search from '~/pages/Search';
 import Post from '~/pages/Post';
 //Import layouts
-import { ExtraLayout } from '~/layouts';
+//import { ExtraLayout } from '~/layouts';
 
 //Router Không Cần Đăng Nhập Vẫn Xem Được
 const publicRoutes = [
@@ -25,7 +25,8 @@ const publicRoutes = [
     //Routes Other
 
     //404
-    { path: config.routes.error, component: ErrorPage404, layout: ExtraLayout },
+    //{ path: config.routes.error, component: ErrorPage404, layout: ExtraLayout },
+    { path: config.routes.error, component: ErrorPage404},
 ];
 
 //Router Cần Đăng Nhập Vào Mới Xem Được

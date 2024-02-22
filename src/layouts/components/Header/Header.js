@@ -34,9 +34,9 @@ function Header() {
         id: 1506,
         first_name: 'Nguyễn Đức',
         last_name: 'Quý',
-        full_name: 'Nguyễn Thị Hồng Vân',
-        nickname: 'ndqnthvitvn',
-        avatar: images.nthVan,
+        full_name: 'Nguyễn Đức Quí',
+        nickname: 'ndqitvn',
+        avatar: images.userAvatar,
         bio: '✨ 2003 Lập Trình Vô Danh !',
         tick: true,
         followings_count: 1976,
@@ -130,7 +130,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('avatar-user')}
-                                src={images.nthVan}
+                                src={images.userAvatar}
                                 alt="Avatar User"
                             />
                         ) : (
